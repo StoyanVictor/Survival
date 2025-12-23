@@ -86,3 +86,24 @@ public class Bootstrapper : MonoBehaviour {
 ![BootScreen](Assets/ReadmeAssets/SurvivalBoot.png)
 ![BootScreenGif](Assets/ReadmeAssets/SurvivalBoot.gif)
 
+- **Ну и собственно игровая сцена**
+
+
+![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_1.gif)
+
+**Пока что успел добавить `Outline Shader` чтобы обозначить что с объектом можно взаимодействовать**
+
+![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_outline.gif)
+
+**Интегрировал `Shader` который отвечает за смену времени суток**
+
+![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_DayNight.gif)
+
+**Ну и поигрался с запеканием света**
+
+![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_Light.gif)
+
+
+
+
+
