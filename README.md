@@ -91,10 +91,6 @@ public class Bootstrapper : MonoBehaviour {
 
 ![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_1.gif)
 
-**Пока что успел добавить `Outline Shader` чтобы обозначить что с объектом можно взаимодействовать**
-
-![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_outline.gif)
-
 **Интегрировал `Shader` который отвечает за смену времени суток**
 
 ![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_DayNight.gif)
@@ -103,7 +99,9 @@ public class Bootstrapper : MonoBehaviour {
 
 ![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_Light.gif)
 
+**Пока что успел добавить `Outline Shader` чтобы обозначить что с объектом можно взаимодействовать**
 
+![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_outline.gif)
 
 
 
