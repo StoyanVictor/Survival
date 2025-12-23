@@ -101,7 +101,7 @@ public class Bootstrapper : MonoBehaviour {
 
 **Пока что успел добавить `Outline Shader` чтобы обозначить что с объектом можно взаимодействовать**
 
-![LoopScreenGifStart](Assets/ReadmeAssets/SurvivalLoop_outline.gif)
+![LoopScreen](Assets/ReadmeAssets/SurvivalLoop_outline.gif)
 
 
 
