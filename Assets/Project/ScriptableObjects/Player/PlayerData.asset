@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 15
   _rotationSpeed: 5
+  _maxHealth: 100
+  _maxSatiety: 100
+  _maxTemperature: 100
