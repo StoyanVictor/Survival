@@ -6,17 +6,21 @@ namespace Project.CodeBase.UI.StatsMVC {
         private IStat _satietyStat;
         private IStat _temperatureStat;
 
+        public IStat Health => _healthStat;
+        public IStat Satiety => _satietyStat;
+        public IStat Temperature => _temperatureStat;
+
         public Action<float> OnHealthChanged;
         public Action<float> OnAppetiteChanges;
         public Action<float> OnTemperatureChanged;
         public Action OnPlayerDied;
         
-        public StatsModel(IStat health, IStat satiety, IStat temperature) {
+        public StatsModel(HealthStat health, SatietyStat satiety, TemperatureStat temperature) {
             _healthStat = health;
             _satietyStat = satiety;
             _temperatureStat = temperature;
         }
-
+        
         private void Die() => OnPlayerDied?.Invoke();
         public void IncreaseHealth(float value) {
             _healthStat.Increase(value);

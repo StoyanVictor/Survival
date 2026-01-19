@@ -7,9 +7,11 @@ namespace Project.CodeBase.UI.StatsMVC {
         [SerializeField] private PlayerData _playerData;
         
         private StatsController _statsController;
+        private SurvivalRulesCustomizer _survivalRulesCustomizer;
         
         private void Awake() {
             _statsController = new StatsController(_statsView,_playerData);
+            _survivalRulesCustomizer = new SurvivalRulesCustomizer(_statsController);
         }
         
         public void IncreaseHealth(float value) => _statsController.GetModel.IncreaseHealth(value);

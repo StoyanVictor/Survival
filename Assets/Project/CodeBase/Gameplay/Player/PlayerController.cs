@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using Project.CodeBase.Gameplay.Player;
+using UnityEngine;
 namespace Project.CodeBase.Gameplay.Player {
     public class PlayerController : MonoBehaviour {
 
@@ -13,4 +16,17 @@ namespace Project.CodeBase.Gameplay.Player {
             _moveStrategy.Move();
         }
     }
+}
+
+public class PlayerStateSwitcher {
+    
+    private Dictionary<PlayerStates, IMovable> _moveStrategies = new Dictionary<PlayerStates, IMovable>();
+    public Action<PlayerStates> OnPlayerStateChanged;
+
+}
+
+public enum PlayerStates {
+    Hungry,
+    Died,
+    Casual
 }

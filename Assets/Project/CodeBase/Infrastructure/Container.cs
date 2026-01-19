@@ -1,4 +1,5 @@
-﻿using Project.CodeBase.Infrastructure.Services;
+﻿using Project.CodeBase.Common;
+using Project.CodeBase.Infrastructure.Services;
 using UnityEngine;
 namespace Project.CodeBase.Infrastructure {
     public class Container  : MonoBehaviour {
@@ -7,9 +8,11 @@ namespace Project.CodeBase.Infrastructure {
         private GameStateMachine.GameStateMachine _gameStateMachine;
         private InputService _inputService;
         private Factory _factory;
+        private Timer _timer;
         public GameStateMachine.GameStateMachine GameStateMachine => _gameStateMachine;
         public InputService InputService => _inputService;
         public Factory Factory => _factory;
+        public Timer Timer => _timer;
 
         private void Awake() { 
             
@@ -17,6 +20,7 @@ namespace Project.CodeBase.Infrastructure {
             _gameStateMachine = new GameStateMachine.GameStateMachine();
             _inputService = new InputService();
             _factory = new Factory();
+            _timer = new Timer();
         }
 
         private void Init() {
